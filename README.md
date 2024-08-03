@@ -7,15 +7,15 @@
 NEAT é um algoritmo de inteligência artificial que usa conceitos de evolução e crescimento incremental para treinar redes neurais.
 Ele usa os seguintes processos
 
-**Evolução de Redes Neurais:**
+### Evolução de Redes Neurais:
 
     Ao invés de treinar uma rede neural usando métodos tradicionais, o NEAT usa um processo evolutivo, parecido com a seleção natural. Isso significa que ele começa com várias redes neurais simples e as melhora ao longo de várias gerações, selecionando as melhores e combinando-as para criar novas redes.
 
-**Aumento Incremental:** 
+### Aumento Incremental:
 
     Diferente de outros métodos que começam com redes neurais grandes e complexas, o NEAT começa com redes simples e as torna mais complexas ao longo do tempo, adicionando novos nós e conexões conforme necessário. Isso permite que as redes cresçam e se adaptem de forma mais eficiente ao problema que estão tentando resolver.
 
-**Como Funciona:**
+### Como Funciona:
  - Inicialização: Começa com uma população de redes neurais simples.
  - Avaliação: Cada rede é avaliada com base em quão bem resolve o problema (sua "aptidão").
  - Seleção e Reprodução: As redes com melhor desempenho são selecionadas para "cruzamento" e "mutação" para criar a próxima geração de redes.
@@ -80,17 +80,10 @@ Bias é o valor adicionado a soma ponderada, que ajuda o codigo a transformar o 
 
 Compatibilidade é uma medida de quão semelhantes são dois indivíduos em uma população evolutiva. Na configuração NEAT , a compatibilidade ajuda a decidir se dois indivíduos (ou redes neurais) devem ser considerados parte da mesma espécie. Isso é crucial para o processo de especiação e evolução da rede neural.
 
-<<<<<<< Updated upstream
 - **compatibility_disjoint_coefficient = 1.0** Define o coeficiente para a compatibilidade dos genes disjuntos
 Genes disjuntos são aqueles que não têm correspondentes em ambos os indivíduos comparados. Se um gene está presente em um indivíduo, mas não no outro, ele é considerado disjunto. De outra especie
 
 - **compatibility_weight_coefficient = 0.5** Define o coeficiente para a compatibilidade das diferenças de peso.
-=======
-# compatibility_disjoint_coefficient = 1.0 Define o coeficiente para a compatibilidade dos genes disjuntos
-Genes disjuntos são aqueles que não têm correspondentes em ambos os indivíduos comparados. Se um gene está presente em um indivíduo, mas não no outro, ele é considerado disjunto. De outra especie
-
-# compatibility_weight_coefficient = 0.5 Define o coeficiente para a compatibilidade das diferenças de peso.
->>>>>>> Stashed changes
 As diferenças de peso entre os genes correspondentes em dois indivíduos também são usadas para calcular a compatibilidade. Este coeficiente determina o quanto essas diferenças de peso influenciam a compatibilidade.
 
 Um coeficiente maior para diferenças de peso aumenta a penalidade para variações nos pesos dos genes, ajudando a garantir que indivíduos com grandes diferenças nos pesos sejam menos propensos a serem considerados da mesma espécie.
