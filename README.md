@@ -80,10 +80,10 @@ Bias é o valor adicionado a soma ponderada, que ajuda o codigo a transformar o 
 
 Compatibilidade é uma medida de quão semelhantes são dois indivíduos em uma população evolutiva. Na configuração NEAT , a compatibilidade ajuda a decidir se dois indivíduos (ou redes neurais) devem ser considerados parte da mesma espécie. Isso é crucial para o processo de especiação e evolução da rede neural.
 
-# compatibility_disjoint_coefficient = 1.0 Define o coeficiente para a compatibilidade dos genes disjuntos
+- **compatibility_disjoint_coefficient = 1.0** Define o coeficiente para a compatibilidade dos genes disjuntos
 Genes disjuntos são aqueles que não têm correspondentes em ambos os indivíduos comparados. Se um gene está presente em um indivíduo, mas não no outro, ele é considerado disjunto. De outra especie
 
-# compatibility_weight_coefficient = 0.5 Define o coeficiente para a compatibilidade das diferenças de peso.
+- **compatibility_weight_coefficient = 0.5** Define o coeficiente para a compatibilidade das diferenças de peso.
 As diferenças de peso entre os genes correspondentes em dois indivíduos também são usadas para calcular a compatibilidade. Este coeficiente determina o quanto essas diferenças de peso influenciam a compatibilidade.
 
 Um coeficiente maior para diferenças de peso aumenta a penalidade para variações nos pesos dos genes, ajudando a garantir que indivíduos com grandes diferenças nos pesos sejam menos propensos a serem considerados da mesma espécie.
