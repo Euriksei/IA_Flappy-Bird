@@ -28,7 +28,7 @@ Ele usa os seguintes processos
     Esta seção define os parâmetros gerais do algoritmo NEAT.
 
 ### [NEAT]
----
+
 - **fitness_criterion = max:** O critério de aptidão é maximizar a pontuação.
 - **fitness_threshold = 1000:** A aptidão alvo para a qual a evolução deve tentar alcançar.
 - **pop_size = 100:** Tamanho da população, ou seja, quantos indivíduos (redes neurais) existem em cada geração.
@@ -62,8 +62,6 @@ varias funções de ativação são posiveis como soma media e produto. A escolh
 
 ### [BIAS]
 
---- 
-
 Bias é o valor adicionado a soma ponderada, que ajuda o codigo a transformar o valor em algo proximo de 1 e -1
 (Nós (Neurônios) sao unidades que recebem alguma entrada e multiplicam pelo peso)
 
@@ -79,7 +77,6 @@ Bias é o valor adicionado a soma ponderada, que ajuda o codigo a transformar o 
 
 ### [COMPATIBILIDADE]
 
----
 
 Compatibilidade é uma medida de quão semelhantes são dois indivíduos em uma população evolutiva. Na configuração NEAT , a compatibilidade ajuda a decidir se dois indivíduos (ou redes neurais) devem ser considerados parte da mesma espécie. Isso é crucial para o processo de especiação e evolução da rede neural.
 
@@ -94,8 +91,6 @@ Um coeficiente maior para diferenças de peso aumenta a penalidade para variaç�
 ---
 
 ### [CONEXOES]
-
----
 
 Em uma rede neural, conexões são as ligações entre os nós (ou neurônios) que permitem a transferência de informações de um nó para outro. Cada conexão tem um peso associado que influencia a força e a direção da informação transmitida.
 
@@ -118,8 +113,6 @@ rede e a eliminar conexões que não contribuem significativamente para o desemp
 ---
 
 ### [ESTRUTURA_DE_REDE]
-
----
 
 A estrutura de rede em uma rede neural refere-se à organização e ao arranjo dos seus componentes, que incluem os nós (ou neurônios) e as conexões entre eles.
 
@@ -145,8 +138,6 @@ complexos ao aumentar sua capacidade de modelagem.
 ---
 
 ### [PARAMETROS_DE_REDE]
-
----
 
 Esses parâmetros definem a estrutura inicial da rede neural, determinando 
 o número de nós (ou neurônios) em cada camada da rede.
@@ -174,8 +165,6 @@ Define quantas ações a rede pode tomar como saída. Isso define a açao de pul
 ---
 
 ### [RESPOSTA_DE_NÓS]
-
----
 
 Esses parâmetros se referem à configuração da resposta dos nós na rede neural, 
 o que afeta como cada nó processa e transmite informações.
@@ -217,8 +206,6 @@ inicialização da rede mais uniforme e previsível.
 
 ### [DEFAULTESPECIESET]
 
----
-
 Esta seção define como as espécies são gerenciadas.
 
 - **compatibility_threshold = 3.0:** Limite de compatibilidade para determinar se dois genomas pertencem à mesma espécie.
@@ -226,8 +213,6 @@ Esta seção define como as espécies são gerenciadas.
 ---
 
 ### [DefaultStagnation]
-
----
 
 Esta seção define como lidar com estagnação dentro das espécies.
 
@@ -238,8 +223,6 @@ Esta seção define como lidar com estagnação dentro das espécies.
 ---
 
 ### [DefaultReproduction]
-
----
 
 Esta seção define como a reprodução é gerenciada.
 
